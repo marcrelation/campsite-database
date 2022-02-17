@@ -1,5 +1,6 @@
 # campsite-database
 Open source database of campground sites. (Currently only FL State Parks)
+- As an added bonus availability_finder.py has been added which for FL State Parks will find all site availability for the next 11 months based on a query using the campground database.
 
 ***Description:***
 - Python based scripts to generate a sqlite3 database that contains park and site information.  Currently the database is not committed and will require you to generate it from the scripts for usage.

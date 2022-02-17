@@ -153,7 +153,7 @@ def fetch_amenities(con):
                 row.append(view)
                 rows.append(row)
             cur = con.cursor()
-            cur.executemany("INSERT INTO Campsites VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rows)
+            cur.executemany("INSERT INTO campsites VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rows)
             con.commit()
             # THIS IS IMPORTANT... IF YOU HIT THE SITE TO FAST YOU WILL BE BLOCKED...
 
@@ -178,3 +178,4 @@ cur.execute('''CREATE TABLE IF NOT EXISTS campsites (
     view text
     )''')
 fetch_amenities(con)
+con.close()
